@@ -8,6 +8,7 @@ import Footer from "./footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import Tools from "./Tools"
+import RSVP from "./rsvp";
 
 
 export {
@@ -20,5 +21,6 @@ export {
   Hero,
   Tools,
   Solutions,
+  RSVP,
   Prob,
 };
