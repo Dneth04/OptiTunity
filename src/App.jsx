@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './style';
 
-import { Navbar, Hero, Stats,  Tools, Prob,
+import { Navbar, Hero, Stats,  Tools,
  Testimonials, Clients, CTA, Footer, 
   Solutions} from './components';
 
@@ -24,7 +24,6 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         {/* <Stats /> */}
         <Tools />
-        <Prob />
         <Solutions />
         <Clients />
         <CTA />
