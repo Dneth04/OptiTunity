@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
 import Solutions from "./Solutions";
-import Clients from "./Clients";
 import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
@@ -11,7 +10,6 @@ import Tools from "./Tools"
 
 export {
   Navbar,
-  Clients,
   CTA,
   Stats,
   Footer,
