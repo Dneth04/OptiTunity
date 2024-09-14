@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Prob from "./prob"
 import Solutions from "./Solutions";
 import Clients from "./Clients";
 import CTA from "./CTA";
@@ -20,5 +19,4 @@ export {
   Hero,
   Tools,
   Solutions,
-  Prob,
 };
