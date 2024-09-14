@@ -5,7 +5,7 @@ import styles, { layout } from '../style';
 
 const Prob = () => {
   return (
-    <section id="product" className={layout.sectionReverse}>
+    <section id="Challenges" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
         <img src={bill} alt="Google" 
         className="w-[100%] h-[100%] relative z-[5]" />

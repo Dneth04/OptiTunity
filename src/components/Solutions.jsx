@@ -5,7 +5,7 @@ import Button from './Button'
 import styles, { layout } from '../style'
 const Solutions = () => {
   return (
-    <section className={layout.section}>
+    <section id="Solution" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>Our Solution</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
