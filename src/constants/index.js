@@ -51,7 +51,7 @@ export const features = [
     icon: send,
     title: "Linked-in Post generator",
     content:
-      "Effortlessly create a LinkedIn post by simply providing a brief sentence about the message you want to share.",
+      "Effortlessly create a LinkedIn post by simply providing a brief sentence about the message you want to share.(This feature is currently in development, stay tuned!)",
   },
 ];
 
