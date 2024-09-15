@@ -59,7 +59,7 @@ const Tools = () => {
     className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-poppins font-medium py-3 px-6 rounded-md shadow-lg hover:opacity-90"
     style={{ transition: 'all 0.3s ease-in-out' }}
   >
-    Job Summary demo
+    JobSummary demo
   </button>
 </a>
 
