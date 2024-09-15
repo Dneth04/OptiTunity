@@ -2,10 +2,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './style';
+import Hotjar from '@hotjar/browser';
 
 import { Navbar, Hero, Stats, Tools, Prob, Testimonials, Clients, CTA, Footer, Solutions, RSVP } from './components';
+const siteId = 5135440;
+const hotjarVersion = 6;
 
+Hotjar.init(siteId, hotjarVersion);
 const App = () => (
+  
   <Router>
     <div className='bg-primary w-full overflow-hidden'>
       <Routes>
