@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import React, { useRef, useState } from "react";
-
+import styles from "../style";
 const RSVP = () => {
   const formRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
@@ -46,85 +46,107 @@ const RSVP = () => {
         </div>
       ) : (
         <>
-          <p style={{ color: 'white', marginBottom: '20px', fontSize: '14px' }}>
+          <p style={{ 
+            color: 'white', 
+            marginBottom: '20px', 
+            fontSize: '14px', 
+            textAlign: 'center' 
+          }}>
             RSVP us to get notified once we launch our website fully!
           </p>
+
           <Form
             style={{
               textAlign: 'left',
-              backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              background: 'linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%)',
               padding: '30px',
               borderRadius: '15px',
               width: '100%',
               maxWidth: '500px',
-              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.37)',
+              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.6)',
               backdropFilter: 'blur(8px)',
               WebkitBackdropFilter: 'blur(8px)',
               border: '1px solid rgba(255, 255, 255, 0.18)',
               marginTop: '20px',
             }}
+            
             ref={formRef}
             onSubmit={handleSubmit}
           >
-            <h3 style={{
+            <h3 className=" text-gradient" style={{
               color: 'white',
               marginBottom: '20px',
-              fontSize: '24px',
+              fontSize: '30px',
               fontWeight: '600',
               textAlign: 'center'
             }}>RSVP Form</h3>
             
-            <Form.Group className="mb-3" controlId="formName">
+            <Form.Group className="mb-3" controlId="formName" >
               <Form.Label style={{ color: 'white' }}>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your name"
-                name="Name"
-                required
-                style={{ 
-                  borderRadius: '10px', 
-                  marginBottom: '15px', 
-                  color: 'black',  // Text color
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)'  // Light background to contrast with white
-                }}
-              />
+              <div >
+                <Form.Control
+                  type="text"
+                  placeholder=" Enter your name"
+                  name="Name"
+                  required
+                  style={{ 
+                    borderRadius: '5px', 
+                    marginBottom: '15px', 
+                    color: 'black',
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+                    width: '100%', // Full width
+                    maxWidth: '400px' // Restrict max width to keep it centered and not too wide
+                  }}
+                />
+              </div>
             </Form.Group>
             
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="formBasicEmail" >
               <Form.Label style={{ color: 'white' }}>Email Id</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter your email"
-                name="Email"
-                required
-                style={{ 
-                  borderRadius: '10px', 
-                  marginBottom: '15px', 
-                  color: 'black',  // Text color
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)'  // Light background to contrast with white
-                }}
-              />
+   
+              <div >
+                <Form.Control
+                  type="email"
+                  placeholder=" Enter your email"
+                  name="Email"
+                  required
+                  style={{ 
+                    borderRadius: '5px', 
+                    marginBottom: '15px', 
+                    color: 'black',
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+                    width: '100%',
+                    maxWidth: '400px'
+                  }}
+                />
+              </div>
+              <br></br>
               <Form.Text className="text-muted" style={{ color: 'white' }}>
                 We will never share your email with anyone else.
               </Form.Text>
             </Form.Group>
             
-            <Form.Group className="mb-3" controlId="Description">
-              <Form.Label style={{ color: 'white' }}>Message</Form.Label>
-              <Form.Control
-                as="textarea"
-                rows={4}
-                name="Message"
-                required
-                style={{ 
-                  borderRadius: '10px', 
-                  marginBottom: '15px', 
-                  color: 'black',  // Text color
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)'  // Light background to contrast with white
-                }}
-              />
+            <Form.Group className="mb-3" controlId="Description" >
+              <Form.Label style={{ color: 'white' }}>Message</Form.Label> 
+              <br></br>
+              <div >
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  name="Message"
+                  required
+                  style={{ 
+                    borderRadius: '10px', 
+                    marginBottom: '15px', 
+                    color: 'black',
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    width: '100%',
+                    maxWidth: '400px'
+                  }}
+                />
+              </div>
             </Form.Group>
-            
+           
             <Button
               style={{
                 background: 'linear-gradient(to right, #1e3a8a, #06b6d4)',
