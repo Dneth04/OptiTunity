@@ -21,6 +21,7 @@ import linkedin from "./linkedin.svg";
 
 export {
   card,
+  bill,
   dropbox,
   logo,
   quotes,
