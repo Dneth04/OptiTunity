@@ -37,7 +37,7 @@ const Tools = () => {
           you on the journey to reach it!
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          We’ve utilized the power of Gemini AI and RAG, with Pinecone for
+          We’ve utilized the power of Gemini AI, with Pinecone for
           backend data storage, to build these innovative features.
         </p>
 
